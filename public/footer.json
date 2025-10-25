@@ -1,0 +1,61 @@
+{
+  "section_one": {
+    "description": "Empowering brands with cutting-edge digital solutions to drive growth and innovation"
+    
+  },
+  "section_two": {
+    "title": "Links",
+    "links": [
+      {
+        "title": "About",
+        "slug": "about"
+      },
+      {
+        "title": "Our Services",
+        "slug":"our-services"
+      },
+      {
+        "title": "Recent Projects",
+        "slug":"recent-projects"
+      },
+      {
+        "title": "Upcoming News",
+        "slug":"upcoming-news"
+      },
+      {
+        "title": "Contact",
+        "slug":"contact"
+      }
+    ]
+  },
+  "section_three": {
+    "title": "Explore",
+    "links": [
+      {
+        "title": "Meet the team",
+        "slug":"meet-the-team"
+      },
+      {
+        "title": "Support",
+        "slug":"support"
+      },
+      {
+        "title": "Privacy Policy",
+        "slug":"privacy-policy"
+      },
+      {
+        "title": "Terms of Use",
+        "slug":"terms-of-use"
+      }
+    ]
+  },
+  "header_section": {
+  
+      "location": "4648 Rocky Road Philadelphia PA, 1920",
+
+      "email": "info@yourtheme.com",
+
+      "phone": "+88 0123 654 99"
+    
+  }
+}

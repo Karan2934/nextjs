@@ -1,0 +1,118 @@
+[
+    {
+        "title": "Home",
+        "slug": "/",
+        "child": [
+            {
+                "title": "Home 1",
+                "slug": "/home-1"
+            },
+            {
+                "title": "Home 2",
+                "slug": "/home-2"
+            },
+            {
+                "title": "Home 3",
+                "slug": "/home-3"
+            },
+            {
+                "title": "Home 4",
+                "slug": "/home-4"
+            },
+            {
+                "title": "Home 5",
+                "slug": "/home-5"
+            },
+            {
+                "title": "Home 6",
+                "slug": "/home-6"
+            },
+            {
+                "title": "Header Styles",
+                "slug": "/header-styles",
+                "child": [
+                    {
+                        "title": "Header Style 1",
+                        "slug": "/header-style-1"
+                    },
+                    {
+                        "title": "Header Style 2",
+                        "slug": "/header-style-2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Pages",
+        "slug": "/",
+        "child": [
+            {
+                "title": "About",
+                "slug": "/about"
+            },
+            {
+                "title": "Contact",
+                "slug": "/contact"
+            },
+            {
+                "title": "Team",
+                "slug": "/team"
+            },
+            {
+                "title": "Team Details",
+                "slug": "/team-details"
+            },
+            {
+                "title": "Testimonial",
+                "slug": "/testimonial"
+            },
+            {
+                "title": "Faqs",
+                "slug": "/faqs"
+            }
+        ]
+    },
+    {
+        "title": "Project",
+        "slug": "/",
+        "child": [
+            {
+                "title": "Project",
+                "slug": "/project"
+            },
+            {
+                "title": "Project Details",
+                "slug": "/project-details"
+            }
+        ]
+    },
+    {
+        "title": "Service",
+        "slug": "/",
+        "child": [
+            {
+                "title": "Service",
+                "slug": "/service"
+            },
+            {
+                "title": "Service Details",
+                "slug": "/service-details"
+            }
+        ]
+    },
+    {
+        "title": "Blog",
+        "slug": "/",
+        "child": [
+            {
+                "title": "Blog",
+                "slug": "/blog"
+            },
+            {
+                "title": "Blog Details",
+                "slug": "/blog-details"
+            }
+        ]
+    }
+]
