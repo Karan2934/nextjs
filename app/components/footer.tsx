@@ -9,7 +9,7 @@ import { faTwitter, faFacebookF, faYoutube, faPinterestP } from '@fortawesome/fr
 
 export default function Footer() {
 
-  const [footerData, setFooterData] = useState<any>(null);
+  const [footerData, setFooterData] = useState();
 
   useEffect(() => {
     const data = footerLinks();
@@ -19,12 +19,12 @@ export default function Footer() {
   if (!footerData) return null;
 
   return (
-    <div className='p-8'>
+    <div className='p-7'>
       <div className='bg-[url(/icons/pattern-7.png)] bg-[#1b152c] bg-cover bg-center bg-no-repeat min-h-100 rounded-3xl'>
         <div className='p-7 flex items-center justify-center'>
           <div className='rounded-4xl bg-[url(/icons/footer-bg.jpg)] w-full max-w-4/5 bg-cover bg-center'>
-            <div className='w-full bg-gradient-to-r from-[#a051e6a8] to-[#6b43e3] bg-center bg-no-repeat h-36 flex items-center justify-center rounded-3xl'>
-              <div className='flex flex-col lg:flex-row justify-center items-center gap-4 lg-gap-10'>
+            <div className='w-full bg-gradient-to-r from-[#a051e6a8] to-[#6b43e3] bg-center bg-no-repeat min-h-36 flex items-center justify-center rounded-3xl'>
+              <div className='flex flex-col md:flex-row items-center gap-4 md-gap-10'>
                 <div className='flex items-center justify-center space-x-2 lg:space-x-3'>
                   <div className='bg-white p-3 rounded-full'>
                     <FontAwesomeIcon icon={faMapMarkerAlt} className='text-[#6c43e3] h-5 w-5' />
@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='p-7 flex flex-col lg:flex-row items-start ml-36 mr-36 gap-4'>
+        <div className='p-7 flex flex-col xl:ml-36 xl:mr-36 sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:flex lg:flex-row items-start gap-4'>
           <div className='w-full lg:flex-1 h-64'>
             <Image src="/logo-2.png" alt="Logo" width={80} height={30} className='mb-2.5' />
             <p className='text-white font-bold mb-2.5'>
@@ -73,7 +73,7 @@ export default function Footer() {
             <p className='font-bold text-white text-2xl mb-1.5'>{footerData.section_two.title}</p>
             <div className='bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] w-5 h-0.5 mb-2.5'></div>
             <div className='text-[#9c94b3]'>
-              {footerData.section_two.links.map((link: any, index: number) => (
+              {footerData.section_two.links.map((link, index) => (
                 <p key={index} className='mb-1.5 '>
                   <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>
                     {link.title}
@@ -87,15 +87,15 @@ export default function Footer() {
             <p className='font-bold text-white text-2xl mb-2.5'>{footerData.section_three.title}</p>
             <div className='bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] w-5 h-0.5 mb-2.5'></div>
             <div className='text-[#9c94b3]'>
-              {footerData.section_three.links.map((link: any, index: number) => (
-                
-                  <p key={index} className='mb-1.5'>
-                    <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>
-                      {link.title}
-                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6b43e3] transition-all duration-300 ease-out group-hover:w-full"></span>
-                    </span>
-                  </p>
-          
+              {footerData.section_three.links.map((link, index) => (
+
+                <p key={index} className='mb-1.5'>
+                  <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>
+                    {link.title}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6b43e3] transition-all duration-300 ease-out group-hover:w-full"></span>
+                  </span>
+                </p>
+
               ))}
             </div>
           </div>
@@ -136,8 +136,6 @@ export default function Footer() {
               </button>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
