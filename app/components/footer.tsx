@@ -115,6 +115,20 @@ export default function Footer() {
                   className='absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#6c43e3] cursor-pointer'
                 />
               </div>
+              <div>
+              <div className='relative mb-2.5'>
+                <input
+                  type='text'
+                  placeholder='Email address'
+                  className=' text-[#9c94b3] bg-[#0d0A16] w-full p-4 pr-12 rounded'
+                  required
+                />
+                <FontAwesomeIcon
+                  icon={faPaperPlane}
+                  className='absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#6c43e3] cursor-pointer'
+                />
+              </div>
+            </div>
             </div>
             <div>
               <input
