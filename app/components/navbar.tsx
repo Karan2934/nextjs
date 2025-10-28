@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import NavLinks from "./navLinks"
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClose, faPhone, faSquareEnvelope, faMapMarker } from "@fortawesome/free-solid-svg-icons"
+import { faClose, faPhone, faArrowRight} from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faInstagram, faPinterest, faTwitter } from "@fortawesome/free-brands-svg-icons"
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -101,7 +101,7 @@ export default function Navbar() {
                         </div>
 
                         <div className="hidden xl:block max-w-70 bg-[#1b152c] h-26 p-10 rounded-r-3xl">
-                            <Link href="/" className="text-white font-bold text-xl">CONTACT NOW <span className="text-indigo-600 text-2xl">→</span></Link>
+                            <Link href="/" className="text-white font-bold text-xl">CONTACT NOW <FontAwesomeIcon icon={faArrowRight} className="text-indigo-600 text-[18px]"/> </Link>
                         </div>
                     </div>
                 </div>
@@ -126,10 +126,10 @@ export default function Navbar() {
                                         <p className="text-lg font-medium text-gray-800 p-2">{mainNav.title}</p>
                                         <div className="flex items-center">
                                             <span className="border-l p-2 border-gray-300"></span>
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABaklEQVR4nO3aMWrDQBRF0VclhKcsMllJymwnVcoUnqzLwSA3Ng4yaPxn/r8HBC4Mku+TsQtJAAAAAAAAAAAAAAAAAAAAAACgojdJS/RFDGhZ23T1Ieko6VfSa++TTcSSftY2n73jnw9GuI5/7DXCZXxGuB1/9xHeb5zgfByK/iYs62f/r82pXdeVq34TvKFJ27MJIwTGv+fE2UdwVPx7LiDrCI6OX3kEjxK/4ggeLX6lETxq/AojePT4mUfwLPEzjuDZ4mcawbPGzzCCZ48/8wjOEn/GEZwt/kwjOGv8GUZw9vgjj+Aq8UccwdXijzSCq8YfYQRXjx85gokfN4KJHzeCiR83gokfN4KJHzeCiR83gokfN4KJHzeCiR83gokf9/j3YeN7Kj4+vwtvuLu58wcdoRE/boRG/LgRGvHjRmjEjxuhEf9xlosRTq/5q/lgz5K+JH1Leom+mKqe1gMAAAAAAAAAAAAAoCt/zPyDj6AVJN0AAAAASUVORK5CYII=" alt="expand-arrow--v1"
-                                            className={`h-4 w-4 transition-transform duration-300 mr-2 ${openSubMenu === mainNav.title ? 'rotate-180' : 'rotate-0'}`}
-                                            onClick={() => setOpenSubMenu(openSubMenu === mainNav.title ? null : mainNav.title)}
-                                        ></img>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABaklEQVR4nO3aMWrDQBRF0VclhKcsMllJymwnVcoUnqzLwSA3Ng4yaPxn/r8HBC4Mku+TsQtJAAAAAAAAAAAAAAAAAAAAAACgojdJS/RFDGhZ23T1Ieko6VfSa++TTcSSftY2n73jnw9GuI5/7DXCZXxGuB1/9xHeb5zgfByK/iYs62f/r82pXdeVq34TvKFJ27MJIwTGv+fE2UdwVPx7LiDrCI6OX3kEjxK/4ggeLX6lETxq/AojePT4mUfwLPEzjuDZ4mcawbPGzzCCZ48/8wjOEn/GEZwt/kwjOGv8GUZw9vgjj+Aq8UccwdXijzSCq8YfYQRXjx85gokfN4KJHzeCiR83gokfN4KJHzeCiR83gokfN4KJHzeCiR83gokf9/j3YeN7Kj4+vwtvuLu58wcdoRE/boRG/LgRGvHjRmjEjxuhEf9xlosRTq/5q/lgz5K+JH1Leom+mKqe1gMAAAAAAAAAAAAAoCt/zPyDj6AVJN0AAAAASUVORK5CYII=" alt="expand-arrow--v1"
+                                                className={`h-4 w-4 transition-transform duration-300 mr-2 ${openSubMenu === mainNav.title ? 'rotate-180' : 'rotate-0'}`}
+                                                onClick={() => setOpenSubMenu(openSubMenu === mainNav.title ? null : mainNav.title)}
+                                            ></img>
                                         </div>
                                     </div>
                                     {openSubMenu === mainNav.title
@@ -166,21 +166,36 @@ export default function Navbar() {
                         <div className=" border-t border-gray-200 flex-col flex justify-between h-full">
                             <div className="p-6">
                                 <div className="mb-4 flex items-center">
-                                    <FontAwesomeIcon icon={faPhone} />
+                                    <Image
+                                        src="/phone.svg"
+                                        height={25}
+                                        width={25}
+                                        alt="phone"
+                                    />
                                     <div className="pl-2">
                                         <div className="text-sm text-gray-600">CALL NOW</div>
                                         <div className="font-medium">+92 (8800) - 98670</div>
                                     </div>
                                 </div>
                                 <div className="mb-4 flex items-center">
-                                    <FontAwesomeIcon icon={faSquareEnvelope} />
+                                    <Image
+                                        src="/email.svg"
+                                        height={25}
+                                        width={25}
+                                        alt="email"
+                                    />
                                     <div className="pl-2">
                                         <div className="text-sm text-gray-600">SEND EMAIL</div>
                                         <div className="font-medium">help@company.com</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center">
-                                    <FontAwesomeIcon icon={faMapMarker} />
+                                    <Image
+                                        src="/location.svg"
+                                        height={25}
+                                        width={25}
+                                        alt="location"
+                                    />
                                     <div className="pl-2">
                                         <div className="text-sm text-gray-600">ADDRESS</div>
                                         <div className="font-medium">66 Broklyant, New York India 3269</div>
@@ -188,7 +203,7 @@ export default function Navbar() {
                                 </div>
                             </div>
 
-                           <div className="border-t border-gray-200 flex justify-center space-x-4">
+                            <div className="border-t border-gray-200 flex justify-center space-x-4">
                                 <FontAwesomeIcon icon={faTwitter} className="border-r p-5 border-gray-200 hover:text-amber-600 transition-colors duration-300 ease" />
                                 <FontAwesomeIcon icon={faFacebookF} className="border-r p-5 border-gray-200 hover:text-amber-600 transition-colors duration-300 ease" />
                                 <FontAwesomeIcon icon={faPinterest} className="border-r p-5 border-gray-200 hover:text-amber-600 transition-colors duration-300 ease" />

@@ -1,12 +1,21 @@
-
 'use client'
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import NavbarAfterScroll from "./components/navbarAfterScroll";
 import { useEffect, useState } from "react";
-export default function Home() {
 
+export default function Home() {
+  const [loading, setLoading] = useState(true);
   const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
@@ -22,17 +31,33 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
   }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gray-200">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-purple-400"></div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-200">
-      {/* {!scrolled ? <Navbar /> : <NavbarAfterScroll />} */}
       <div className="sticky top-0 z-50">
         <Navbar />
-        </div>
+      </div>
       <div className="flex-grow p-8 ">
         <h1 className="text-purple-400 text-9xl">Homepage</h1>
-
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
+        <h1 className="text-purple-400 text-9xl">Homepage</h1>
       </div>
       <Footer />
     </div>
