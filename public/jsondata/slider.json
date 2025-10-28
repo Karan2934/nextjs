@@ -1,0 +1,32 @@
+{
+    "bannerSlider": [
+        {
+            "id": 1,
+            "title1": "AI Marketing",
+            "title2": "& Smart Solution",
+            "description": "An award-winning CEO agency with disciplines in digital marketing design and website development. focused understanding you",
+            "buttonText": "Discover More",
+            "buttonLink": "/",
+            "image":"/banner/2-1.jpg"
+        },
+        {
+            "id": 2,
+            "title1": "AI Marketing",
+            "title2": "& Smart Solution",
+            "description": "An award-winning CEO agency with disciplines in digital marketing design and website development. focused understanding you",
+            "buttonText": "Discover More",
+            "buttonLink": "/",
+            "image":"/banner/2-1.jpg"
+        }
+    ],
+    "companySlider": {
+        "title": "Trusted By Top Companies",
+        "images": [
+            "/clients/2-1.png",
+            "/clients/2-2.png",
+            "/clients/2-3.png",
+            "/clients/2-4.png",
+            "/clients/2-5.png"
+        ]
+    }
+}

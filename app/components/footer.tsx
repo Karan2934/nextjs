@@ -9,7 +9,7 @@ import { faTwitter, faFacebookF, faYoutube, faPinterestP } from '@fortawesome/fr
 
 export default function Footer() {
 
-  const [footerData, setFooterData] = useState();
+  const [footerData, setFooterData] = useState<any>();
 
   useEffect(() => {
     const data = footerLinks();
@@ -79,7 +79,7 @@ export default function Footer() {
             <p className='font-bold text-white text-2xl mb-1.5'>{footerData.section_two.title}</p>
             <div className='bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] w-5 h-0.5 mb-2.5'></div>
             <div className='text-[#9c94b3]'>
-              {footerData.section_two.links.map((link, index) => (
+              {footerData.section_two.links.map((link: any, index:number) => (
                 <p key={index} className='mb-1.5'>
                   <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>
                     {link.title}
@@ -93,7 +93,7 @@ export default function Footer() {
             <p className='font-bold text-white text-2xl mb-2.5'>{footerData.section_three.title}</p>
             <div className='bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] w-5 h-0.5 mb-2.5'></div>
             <div className='text-[#9c94b3]'>
-              {footerData.section_three.links.map((link, index) => (
+              {footerData.section_three.links.map((link:any, index: number) => (
 
                 <p key={index} className='mb-1.5'>
                   <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>

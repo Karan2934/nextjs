@@ -2,6 +2,7 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import NavbarAfterScroll from "./components/navbarAfterScroll";
+import Slider from "./components/slider";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -46,19 +47,9 @@ export default function Home() {
       <div className="sticky top-0 z-50">
         <Navbar />
       </div>
-      <div className="flex-grow p-8 ">
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-        <h1 className="text-purple-400 text-9xl">Homepage</h1>
-      </div>
+
+      <Slider />
+
       <Footer />
     </div>
   );
