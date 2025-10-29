@@ -20,13 +20,13 @@
         }
     ],
     "companySlider": {
-        "title": "Trusted By Top Companies",
         "images": [
             "/clients/2-1.png",
             "/clients/2-2.png",
             "/clients/2-3.png",
             "/clients/2-4.png",
-            "/clients/2-5.png"
+            "/clients/2-5.png",
+            "/clients/2-6.png"
         ]
     }
 }

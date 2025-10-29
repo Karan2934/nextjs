@@ -3,3 +3,17 @@
 .custom-clip {
     clip-path: path("M0 25C0 11.1929 11.1929 0 25 0H207.873C226.131 0 238.231 18.9368 230.559 35.505L198.378 109H0V25Z");
 }
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 10s linear infinite;
+}
