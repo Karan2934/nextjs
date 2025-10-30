@@ -73,7 +73,7 @@ export default function Navbar() {
 
                     <div className="flex ml-auto">
                         <div className="flex items-center space-x-4 p-5">
-                            <div className="hidden 2xl:block "><p><FontAwesomeIcon icon={faPhone} className="" /><span className="text-[#2B2B5E] text-2xl">+92 526 420 009</span></p></div>
+                            <div className="hidden 2xl:block "><p><FontAwesomeIcon icon={faPhone} className="text-[#6c43e3]" /><span className="text-[#2B2B5E] hover:text-[#6c43e3] font-bold text-[20px] transition-colors duration-300 ease">+92 526 420 009</span></p></div>
                             <h1 className="hidden lg:block text-[#1b152c80] scale-x-75 scale-y-250 ">|</h1>
 
                             {/* This code is for search icon (online code)*/}
