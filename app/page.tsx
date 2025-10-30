@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -44,9 +44,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-200">
-      <div className="sticky top-0 z-50">
+      {/* <div className="sticky top-0 z-50"> */}
         <Navbar />
-      </div>
+      {/* </div> */}
 
       <Slider />
 

@@ -14,6 +14,9 @@
     }
 }
 
-.animate-marquee {
-    animation: marquee 10s linear infinite;
+@keyframes bounceX {
+  0% { transform: translateX(-20px); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(-20px); }
 }
+
