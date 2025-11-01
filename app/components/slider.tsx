@@ -6,6 +6,7 @@ import { Navigation } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PiArrowUpRightBold } from 'react-icons/pi';
 
+
 import 'swiper/css';
 import Link from "next/link";
 import { faAngleLeft, faAngleRight, faArrowRight, faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -114,9 +115,8 @@ export default function Slider() {
                                     src={src}
 
                                     className="h-16 w-auto object-contain flex-shrink-0"
-                                />
+                         />
                             ))}
-
                             {/* duplicate images */}
                             {sliderData.companySlider.images.map((src, i) => (
                                 <img

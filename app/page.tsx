@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import NavbarAfterScroll from "./components/navbarAfterScroll";
 import Slider from "./components/slider";
 import { useEffect, useState } from "react";
+import ServiceSection from "./components/ServiceSection";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -12,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
@@ -43,13 +44,13 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-200">
+    <div className="flex flex-col min-h-screen ">
       {/* <div className="sticky top-0 z-50"> */}
         <Navbar />
       {/* </div> */}
 
       <Slider />
-
+      <ServiceSection />
       <Footer />
     </div>
   );

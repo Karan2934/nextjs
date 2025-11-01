@@ -1,0 +1,52 @@
+{
+    "services": [
+        {
+            "number": "01",
+            "title": "Branding",
+            "description": "Brand Design & Logo Design",
+            "image": "/resource/service2-1.jpg",
+            "logo":"/icons/promotion.png",
+            "hover":"/hover/promotion.png",
+            "margin":15
+        },
+        {
+            "number": "02",
+            "title": "Customization",
+            "description": "WordPress & Marketing",
+            "image": "/resource/service2-2.jpg",
+            "logo":"/icons/diplomat.png",
+            "hover":"/hover/diplomat.png",
+            "margin":35
+        },
+        {
+            "number": "03",
+            "title": "Development",
+            "description": "Businesses Solutions",
+            "image": "/resource/service2-3.jpg",
+            "logo":"/icons/goal.png",
+            "hover":"/hover/goal.png",
+            "margin":15
+        },
+        {
+            "number": "04",
+            "title": "Improvements",
+            "description": "Digital Marketing",
+            "image": "/resource/service2-4.jpg",
+            "logo":"/icons/digitalization.png",
+            "hover":"/hover/digitalization.png",
+            "margin":35
+        }
+    ],
+
+    "about":
+        {
+            "title":"Welcome to Our Smart Digital Agency",
+            "description":"The a long established fact that a reader will be distracted the readable content of page when looking at layout the point of using lorem Ipsum less normal distribution of letters.",
+            "point1":"Innovative Solutions",
+            "point2":"User-Friendly Interface",
+            "point3":"Secure Transactions",
+            "point4":"Real-Time Analytics",
+            "buttonText":"DISCOVER MORE"
+        }
+    
+}
