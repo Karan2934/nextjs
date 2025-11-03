@@ -1,4 +1,7 @@
 {
+    "header":"Our Services",
+    "description":"Services We're Offering to Customers",
+    "bgImage":"/icons/shape-14.png",
     "services": [
         {
             "number": "01",

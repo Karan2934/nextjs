@@ -5,6 +5,7 @@ import footerLinks from './footerdata';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhone, faPaperPlane, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebookF, faYoutube, faPinterestP } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
 
 
 export default function Footer() {
@@ -49,9 +50,9 @@ export default function Footer() {
                 </div>
                 <div className='flex items-center justify-center space-x-2 lg:space-x-3'>
                   <div className='border border-gray-400 rounded-full p-3 transition-all ease duration-300 hover:[transform:scaleX(-1)]'>
-                    
-                      <FontAwesomeIcon icon={faPhone} className='text-[#6c43e3] h-5 w-5 bg-white p-3 rounded-full' />
-                  
+
+                    <FontAwesomeIcon icon={faPhone} className='text-[#6c43e3] h-5 w-5 bg-white p-3 rounded-full' />
+
                   </div>
                   <div>
                     <p className='text-white'>call emergency</p>
@@ -79,13 +80,15 @@ export default function Footer() {
             <p className='font-bold text-white text-2xl mb-1.5'>{footerData.section_two.title}</p>
             <div className='bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] w-5 h-0.5 mb-2.5'></div>
             <div className='text-[#9c94b3]'>
-              {footerData.section_two.links.map((link: any, index:number) => (
-                <p key={index} className='mb-1.5'>
-                  <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>
-                    {link.title}
-                    <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6b43e3] transition-all duration-300 ease-out group-hover:w-full'></span>
-                  </span>
-                </p>
+              {footerData.section_two.links.map((link: any, index: number) => (
+                <div key={index}>
+                  <Link href={link.slug}  className='mb-1.5'>
+                    <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>
+                      {link.title}
+                      <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6b43e3] transition-all duration-300 ease-out group-hover:w-full'></span>
+                    </span>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -93,7 +96,7 @@ export default function Footer() {
             <p className='font-bold text-white text-2xl mb-2.5'>{footerData.section_three.title}</p>
             <div className='bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] w-5 h-0.5 mb-2.5'></div>
             <div className='text-[#9c94b3]'>
-              {footerData.section_three.links.map((link:any, index: number) => (
+              {footerData.section_three.links.map((link: any, index: number) => (
 
                 <p key={index} className='mb-1.5'>
                   <span className='hover:text-white transition-colors duration-300 ease cursor-pointer group relative inline-block'>
@@ -138,7 +141,7 @@ export default function Footer() {
               <p className='text-white'>Terms & Conditions</p>
               <p className='text-white'>Privacy Policy</p>
               <button className='bg-[#ED8A33] text-white p-7 flex items-center gap-2 mr-8 hover:bg-[#6b43e3]'
-              onClick={()=>window.scrollTo({top:0, behavior:'smooth'})}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 Top <FontAwesomeIcon icon={faArrowUp} className='h-4 w-4' />
               </button>

@@ -1,7 +1,10 @@
 {
   "section_one": {
-    "description": "Empowering brands with cutting-edge digital solutions to drive growth and innovation"
-    
+    "description": "Empowering brands with cutting-edge digital solutions to drive growth and innovation",
+    "icons":{
+
+      "pintrestp":"faPinterestP"
+    }
   },
   "section_two": {
     "title": "Links",

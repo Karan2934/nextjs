@@ -5,6 +5,7 @@ import NavbarAfterScroll from "./components/navbarAfterScroll";
 import Slider from "./components/slider";
 import { useEffect, useState } from "react";
 import ServiceSection from "./components/ServiceSection";
+import ScrollOpacityText from "./components/forTesting";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -48,7 +49,6 @@ export default function Home() {
       {/* <div className="sticky top-0 z-50"> */}
         <Navbar />
       {/* </div> */}
-
       <Slider />
       <ServiceSection />
       <Footer />

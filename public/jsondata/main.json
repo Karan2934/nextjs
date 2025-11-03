@@ -1,0 +1,258 @@
+{
+    "services": [
+        {
+            "number": "01",
+            "title": "Branding",
+            "description": "Brand Design & Logo Design",
+            "image": "/resource/service2-1.jpg",
+            "logo": "/icons/promotion.png",
+            "hover": "/hover/promotion.png",
+            "margin": 15
+        },
+        {
+            "number": "02",
+            "title": "Customization",
+            "description": "WordPress & Marketing",
+            "image": "/resource/service2-2.jpg",
+            "logo": "/icons/diplomat.png",
+            "hover": "/hover/diplomat.png",
+            "margin": 35
+        },
+        {
+            "number": "03",
+            "title": "Development",
+            "description": "Businesses Solutions",
+            "image": "/resource/service2-3.jpg",
+            "logo": "/icons/goal.png",
+            "hover": "/hover/goal.png",
+            "margin": 15
+        },
+        {
+            "number": "04",
+            "title": "Improvements",
+            "description": "Digital Marketing",
+            "image": "/resource/service2-4.jpg",
+            "logo": "/icons/digitalization.png",
+            "hover": "/hover/digitalization.png",
+            "margin": 35
+        }
+    ],
+    "about": {
+        "title": "Welcome to Our Smart Digital Agency",
+        "description": "The a long established fact that a reader will be distracted the readable content of page when looking at layout the point of using lorem Ipsum less normal distribution of letters.",
+        "point1": "Innovative Solutions",
+        "point2": "User-Friendly Interface",
+        "point3": "Secure Transactions",
+        "point4": "Real-Time Analytics",
+        "buttonText": "DISCOVER MORE"
+    },
+    "footer": {
+        "section_one": {
+            "description": "Empowering brands with cutting-edge digital solutions to drive growth and innovation"
+        },
+        "section_two": {
+            "title": "Links",
+            "links": [
+                {
+                    "title": "About",
+                    "slug": "about"
+                },
+                {
+                    "title": "Our Services",
+                    "slug": "our-services"
+                },
+                {
+                    "title": "Recent Projects",
+                    "slug": "recent-projects"
+                },
+                {
+                    "title": "Upcoming News",
+                    "slug": "upcoming-news"
+                },
+                {
+                    "title": "Contact",
+                    "slug": "contact"
+                }
+            ]
+        },
+        "section_three": {
+            "title": "Explore",
+            "links": [
+                {
+                    "title": "Meet the team",
+                    "slug": "meet-the-team"
+                },
+                {
+                    "title": "Support",
+                    "slug": "support"
+                },
+                {
+                    "title": "Privacy Policy",
+                    "slug": "privacy-policy"
+                },
+                {
+                    "title": "Terms of Use",
+                    "slug": "terms-of-use"
+                }
+            ]
+        },
+        "header_section": {
+            "location": "4648 Rocky Road Philadelphia PA, 1920",
+            "email": "info@yourtheme.com",
+            "phone": "+88 0123 654 99"
+        }
+    },
+   
+    "navbar": [
+        {
+            "title": "Home",
+            "slug": "/",
+            "child": [
+                {
+                    "title": "Home 1",
+                    "slug": "/home-1"
+                },
+                {
+                    "title": "Home 2",
+                    "slug": "/home-2"
+                },
+                {
+                    "title": "Home 3",
+                    "slug": "/home-3"
+                },
+                {
+                    "title": "Home 4",
+                    "slug": "/home-4"
+                },
+                {
+                    "title": "Home 5",
+                    "slug": "/home-5"
+                },
+                {
+                    "title": "Home 6",
+                    "slug": "/home-6"
+                },
+                {
+                    "title": "Header Styles",
+                    "slug": "/header-styles",
+                    "child": [
+                        {
+                            "title": "Header Style 1",
+                            "slug": "/header-style-1"
+                        },
+                        {
+                            "title": "Header Style 2",
+                            "slug": "/header-style-2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Pages",
+            "slug": "/",
+            "child": [
+                {
+                    "title": "About",
+                    "slug": "/about"
+                },
+                {
+                    "title": "Contact",
+                    "slug": "/contact"
+                },
+                {
+                    "title": "Team",
+                    "slug": "/team"
+                },
+                {
+                    "title": "Team Details",
+                    "slug": "/team-details"
+                },
+                {
+                    "title": "Testimonial",
+                    "slug": "/testimonial"
+                },
+                {
+                    "title": "Faqs",
+                    "slug": "/faqs"
+                }
+            ]
+        },
+        {
+            "title": "Project",
+            "slug": "/",
+            "child": [
+                {
+                    "title": "Project",
+                    "slug": "/project"
+                },
+                {
+                    "title": "Project Details",
+                    "slug": "/project-details"
+                }
+            ]
+        },
+        {
+            "title": "Service",
+            "slug": "/",
+            "child": [
+                {
+                    "title": "Service",
+                    "slug": "/service"
+                },
+                {
+                    "title": "Service Details",
+                    "slug": "/service-details"
+                }
+            ]
+        },
+        {
+            "title": "Blog",
+            "slug": "/",
+            "child": [
+                {
+                    "title": "Blog",
+                    "slug": "/blog"
+                },
+                {
+                    "title": "Blog Details",
+                    "slug": "/blog-details"
+                }
+            ]
+        }
+    ],
+    
+    "slider": {
+        "bannerSlider": [
+            {
+                "id": 1,
+                "title1": "AI Marketing",
+                "title2": "& Smart Solution",
+                "description": "An award-winning CEO agency with disciplines in digital marketing design and website development. focused understanding you",
+                "buttonText": "Discover More",
+                "buttonLink": "/",
+                "image": "/banner/2-1.jpg"
+            },
+            {
+                "id": 2,
+                "title1": "AI Marketing",
+                "title2": "& Smart Solution",
+                "description": "An award-winning CEO agency with disciplines in digital marketing design and website development. focused understanding you",
+                "buttonText": "Discover More",
+                "buttonLink": "/",
+                "image": "/banner/2-1.jpg"
+            }
+        ],
+        "companySlider": {
+            "title": "Trusted By top companies",
+            "images": [
+                "/clients/2-1.png",
+                "/clients/2-2.png",
+                "/clients/2-3.png",
+                "/clients/2-4.png",
+                "/clients/2-5.png",
+                "/clients/2-6.png"
+            ]
+        }
+    }
+}

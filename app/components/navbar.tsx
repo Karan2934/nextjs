@@ -18,8 +18,8 @@ export default function Navbar() {
 
     return (
         <div>
-            <div className="p-7 ">
-                <div className="bg-white w-full rounded-3xl flex items-center justify-between max-h-26">
+            <div className="p-7">
+                <div className="bg-white shadow-lg w-full rounded-3xl flex items-center justify-between max-h-26">
                     <div className="max-w-60 bg-[#1b152c] w-full p-9 rounded-3xl custom-clip">
                         <Image
                             src="/logo-2.png"
