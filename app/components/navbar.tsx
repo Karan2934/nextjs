@@ -10,7 +10,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
     const [openSubSubMenu, setOpenSubSubMenu] = useState(null);
-    const [navData, setNavData] = useState<any>([]);
+    const [navData, setNavData] = useState<any[]>([]);
     useEffect(() => {
         const data = NavLinks()
         setNavData(data)
