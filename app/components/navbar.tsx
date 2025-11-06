@@ -4,24 +4,32 @@ import { useState, useEffect } from "react"
 import NavLinks from "./navLinks"
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClose, faPhone, faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faClose, faPhone, faArrowRight} from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faInstagram, faPinterest, faTwitter } from "@fortawesome/free-brands-svg-icons"
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
     const [openSubSubMenu, setOpenSubSubMenu] = useState(null);
-    interface NavItem {
-        title: string;
-        slug: string;
-        child?: NavItem[];
-    }
-
-    const [navData, setNavData] = useState<NavItem[]>([]);
-
+    const [navData, setNavData] = useState<any>([]);
     useEffect(() => {
         const data = NavLinks()
         setNavData(data)
     }, []);
+
+
+
+    //scroll lock when the menu is open nd scrolling only works on close
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
 
     return (
         <div>
@@ -38,7 +46,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden lg:flex items-center space-x-10 text-[#1b152c80] ml-20 font-medium text-base">
-                        {navData.map((navBar: any) => (
+                        {navData.map((navBar:any) => (
                             <div key={navBar.title} className="relative group flex items-center">
                                 <Link href={navBar.slug} className="hover:text-[#6c43e3] mr-1" >{navBar.title.toUpperCase()}
                                 </Link>
@@ -48,7 +56,7 @@ export default function Navbar() {
                                 {/* sub-nav */}
                                 {navBar.child && (
                                     <div className="absolute top-full left-0 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-52 z-50">
-                                        {navBar.child.map((subNav: any) => (
+                                        {navBar.child.map((subNav:any) => (
                                             <div key={subNav.title} className="relative group/sub p-2 border-t border-gray-200">
                                                 <Link href={subNav.slug} className="py-1 px-6  hover:text-[#6c43e3] cursor-pointer flex items-center">
 
@@ -63,7 +71,7 @@ export default function Navbar() {
 
                                                 {subNav.child && (
                                                     <div className="absolute left-full top-0 bg-white shadow-lg p-4 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 min-w-48 border-t">
-                                                        {subNav.child.map((subSubNav: any) => (
+                                                        {subNav.child.map((subSubNav:any) => (
                                                             <Link key={subSubNav.title} href={subSubNav.slug} className="block py-2 px-4 hover:text-[#6c43e3] cursor-pointer">
                                                                 {subSubNav.title}
                                                             </Link>
@@ -108,7 +116,7 @@ export default function Navbar() {
                         </div>
 
                         <div className="hidden xl:block max-w-70 bg-[#1b152c] h-26 p-10 rounded-r-3xl">
-                            <Link href="/" className="text-white font-bold text-xl">CONTACT NOW <FontAwesomeIcon icon={faArrowRight} className="text-indigo-600 text-[18px]" /> </Link>
+                            <Link href="/" className="text-white font-bold text-xl">CONTACT NOW <FontAwesomeIcon icon={faArrowRight} className="text-indigo-600 text-[18px]"/> </Link>
                         </div>
                     </div>
                 </div>
@@ -127,7 +135,7 @@ export default function Navbar() {
                             <FontAwesomeIcon onClick={() => setIsOpen(false)} icon={faClose} className="p-1 bg-gray-200 hover:bg-gray-100 hover:text-gray-400 transition-colors duration-300 ease" />
                         </div>
                         <div className="">
-                            {navData.map((mainNav: any) => (
+                            {navData.map((mainNav:any) => (
                                 <div key={mainNav.title}>
                                     <div className="flex justify-between items-center border-t border-gray-200">
                                         <p className="text-lg font-medium text-gray-800 p-2">{mainNav.title}</p>
@@ -142,7 +150,7 @@ export default function Navbar() {
                                     {openSubMenu === mainNav.title
                                         && (
                                             <div>
-                                                {mainNav.child.map((subNav: any) => (
+                                                {mainNav.child.map((subNav:any) => (
                                                     <div key={subNav.title}>
                                                         <div className="flex justify-between items-center border-t  border-gray-200">
                                                             <p className="text-md font-medium text-gray-600 p-2">{subNav.title}</p>
@@ -156,7 +164,7 @@ export default function Navbar() {
                                                         {openSubSubMenu === subNav.title
                                                             && (
                                                                 <div>
-                                                                    {subNav.child.map((subSubNav: any) => (
+                                                                    {subNav.child.map((subSubNav:any) => (
                                                                         <div key={subSubNav.title} className="flex justify-between items-center border-t border-gray-200">
                                                                             <p className="text-sm font-medium text-gray-600 p-2">{subSubNav.title}</p>
                                                                         </div>

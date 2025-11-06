@@ -1,0 +1,79 @@
+{
+    "projects": {
+        "title": "Our Projects",
+        "description": "Our Recently Completed Projects",
+        "images": [
+            {
+                "image": "/resource/project2-1.jpg",
+                "description": "Future Management Development"
+            },
+            {
+                "image": "/resource/project2-2.jpg",
+                "description": "Future Management Development"
+            },
+            {
+                "image": "/resource/project2-3.jpg",
+                "description": "Future Management Development"
+            },
+            {
+                "image": "/resource/project2-4.jpg",
+                "description": "Future Management Development"
+            }
+        ]
+    },
+    "team": {
+        "title": "Our Team",
+        "description": "What Success Looks From the Back",
+        "people": [
+            {
+                "name": "Daniel Brown",
+                "position": "Marketing",
+                "image": "/resource/team1-1.jpg"
+            },
+            {
+                "name": "Wade Warren",
+                "position": "Marketing",
+                "image": "/resource/team1-2.jpg"
+            },
+            {
+                "name": "Russel Haipner",
+                "position": "Marketing",
+                "image": "/resource/team1-3.jpg"
+            },
+            {
+                "name": "Robert Grodge",
+                "position": "Marketing",
+                "image": "/resource/team1-4.jpg"
+            }
+        ]
+    },
+    "faq": {
+        "title": "Our Faqs",
+        "description": "Empowering Growth with Innovation",
+        "image": "/resource/faq1-1.png",
+        "image2": "/icons/icon-24.png",
+        "image3": "/icons/icon-20.png",
+        "image4": "/icons/h4.6.png",
+        "image5": "/icons/icon-22.png",
+        "image6": "/icons/icon-21.png",
+        "image7": "/icons/icon-25.png",
+        "questions": [
+            {
+                "question": "What is business consulting?",
+                "answer": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the"
+            },
+            {
+                "question": "What do business consultants do?",
+                "answer": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the"
+            },
+            {
+                "question": "Why do companies hire business consultants?",
+                "answer": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the"
+            },
+            {
+                "question": "How much do business consultants charge?",
+                "answer": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the"
+            }
+        ]
+    }
+}

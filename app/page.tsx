@@ -5,7 +5,9 @@ import NavbarAfterScroll from "./components/navbarAfterScroll";
 import Slider from "./components/slider";
 import { useEffect, useState } from "react";
 import ServiceSection from "./components/ServiceSection";
-import ScrollOpacityText from "./components/forTesting";
+import ProjectAndTeam from "./components/ProjectAndTeam";
+import Lastsection from "./components/lastsection";
+import ContactUs from "./components/contactUs";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -51,6 +53,9 @@ export default function Home() {
       {/* </div> */}
       <Slider />
       <ServiceSection />
+      <ProjectAndTeam/>
+      <Lastsection/>
+      <ContactUs/>
       <Footer />
     </div>
   );

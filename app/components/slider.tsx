@@ -6,7 +6,6 @@ import { Navigation } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PiArrowUpRightBold } from 'react-icons/pi';
 
-
 import 'swiper/css';
 import Link from "next/link";
 import { faAngleLeft, faAngleRight, faArrowRight, faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -37,9 +36,9 @@ export default function Slider() {
 
                                     <Link href={data.buttonLink}>
                                         <div className="flex gap-3 items-center group max-w-64">
-                                            <button className="bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] rounded-3xl p-5 font-bold text-white order-1 group-hover:order-2"
+                                            <button className="bg-linear-to-r from-[#a051e6f1] to-[#6b43e3] rounded-3xl p-5 font-bold text-white order-1 group-hover:order-2"
                                             >{data.buttonText.toUpperCase()}</button>
-                                            <FontAwesomeIcon icon={faArrowRight} className="p-5 bg-gradient-to-r from-[#a051e6f1] to-[#6b43e3] text-white rounded-full order-2 group-hover:order-1" />
+                                            <FontAwesomeIcon icon={faArrowRight} className="p-5 bg-linear-to-r from-[#a051e6f1] to-[#6b43e3] text-white rounded-full order-2 group-hover:order-1" />
                                         </div>
                                     </Link>
                                 </div>
@@ -114,15 +113,15 @@ export default function Slider() {
                                     key={i}
                                     src={src}
 
-                                    className="h-16 w-auto object-contain flex-shrink-0"
-                         />
+                                    className="h-16 w-auto object-contain shrink-0"
+                                />
                             ))}
                             {/* duplicate images */}
                             {sliderData.companySlider.images.map((src, i) => (
                                 <img
                                     key={`dup-${i}`}
                                     src={src}
-                                    className="h-16 w-auto object-contain flex-shrink-0"
+                                    className="h-16 w-auto object-contain shrink-0"
                                 />
                             ))}
 

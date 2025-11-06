@@ -1,0 +1,61 @@
+{
+    "Testimonials": {
+        "header": "Testimonials",
+        "subheader": "What They're Talking About Company?",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "image1": "/icons/icon-26.png",
+        "image2": "/icons/icon-quote-2.png",
+        "image3": "/icons/shape-19.png",
+        "users": [
+            {
+                "name": "Michael G. Ware",
+                "comment": "I recently worked with onicx for my home renovation project, and I couldn't be happier with the results. From the moment I walked into their showroom.",
+                "image": "/resource/testi-author-4.jpg",
+                "position": "Managing Director",
+                "rating":5
+            },
+            {
+                "name": "Cameron Williamson",
+                "comment": "I recently worked with onicx for my home renovation project, and I couldn't be happier with the results. From the moment I walked into their showroom.",
+                "image": "/resource/testi-author-5.jpg",
+                "position": "Web Designer",
+                "rating":5
+            }
+        ]
+    },
+    "texts": [
+        "Unlocking AI's Full Potential",
+        "AI Solutions",
+        "Inspired by Innovation",
+        "AI Design Mastery",
+        "Turning Ideas into Reality"
+    ],
+
+    "blogs":{
+        "title":"Our Blogs",
+        "subTitle":"Recent Updates & Insights from Our blog",
+        "posts":[
+            {
+                "image":"/resource/news1-1.jpg",
+                "date":"20 JAN",
+                "title":"10 Easy Strategies to Harness the Power of AI",
+                "description":"There are many variations of passages of one Lorem Ipsum available",
+                "comments":2
+            },
+            {
+                "image":"/resource/news1-2.jpg",
+                "date":"26 JAN",
+                "title":"Web Accessibility Not Just a Trend, Necessity",
+                "description":"There are many variations of passages of one Lorem Ipsum available",
+                "comments":6
+            },
+            {
+                "image":"/resource/news1-3.jpg",
+                "date":"30 JAN",
+                "title":"10 Easy Strategies to Harness the Power of AI",
+                "description":"There are many variations of passages of one Lorem Ipsum available",
+                "comments":4
+            }
+        ]
+    }
+}
