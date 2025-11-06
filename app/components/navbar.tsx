@@ -1,24 +1,18 @@
 'use client'
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import NavLinks from "./navLinks"
+
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose, faPhone, faArrowRight} from "@fortawesome/free-solid-svg-icons"
+import navData from '../../public/jsondata/navbar.json'
 import { faFacebookF, faInstagram, faPinterest, faTwitter } from "@fortawesome/free-brands-svg-icons"
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
     const [openSubSubMenu, setOpenSubSubMenu] = useState(null);
-    const [navData, setNavData] = useState<any>([]);
-    useEffect(() => {
-        const data = NavLinks()
-        setNavData(data)
-    }, []);
 
-
-
-    //scroll lock when the menu is open nd scrolling only works on close
+  
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';

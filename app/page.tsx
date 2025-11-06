@@ -1,7 +1,7 @@
 'use client'
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import NavbarAfterScroll from "./components/navbarAfterScroll";
+
 import Slider from "./components/slider";
 import { useEffect, useState } from "react";
 import ServiceSection from "./components/ServiceSection";

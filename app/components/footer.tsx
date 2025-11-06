@@ -1,21 +1,15 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import footerLinks from './footerdata';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhone, faPaperPlane, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebookF, faYoutube, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
+import footerData from '../../public/jsondata/footer.json'
 
 
 export default function Footer() {
 
-  const [footerData, setFooterData] = useState<any>();
-
-  useEffect(() => {
-    const data = footerLinks();
-    setFooterData(data);
-  }, []);
 
   if (!footerData) return null;
 
